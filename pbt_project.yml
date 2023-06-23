@@ -70,7 +70,7 @@ pipelines:
     datasets:
       inputs:
       - datasets/web_bronze_sitemap
-      - datasets/web_bronze_url
+      - datasets/web_bronze_url_alt
       outputs:
       - datasets/web_bronze_content
       - datasets/web_bronze_sitemap_raw
@@ -194,6 +194,19 @@ datasets:
         description: ''
         author: maciej@prophecy.io
         createdAt: '2023-06-20 04:50:58'
+  datasets/web_bronze_url_alt:
+    name: web_bronze_url_alt
+    description: ''
+    author: rj@prophecy.io
+    createdAt: '2023-06-23 20:47:39'
+    mode: batch
+    physicalDatasets:
+      demos:
+        fabricId: 1174
+        datasetType: WebApp
+        description: ''
+        author: rj@prophecy.io
+        createdAt: '2023-06-23 20:47:39'
 templates: {}
 jobs: {}
 functions:
@@ -207,7 +220,7 @@ functions:
       tags: []
       inputs: []
       outputs: []
-      author: maciej@prophecy.io
+      author: rj@prophecy.io
       createdAt: '2022-12-15 18:04:50'
   udafs: {}
   expressions: {}

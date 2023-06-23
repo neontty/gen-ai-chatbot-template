@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1618",
+    "fabricId" : "1174",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -67,12 +67,6 @@
     "target" : "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt",
     "targetPort" : "CFLd78WnSN61UDtHRsKp7$$M2DN6SgRCpFW400lBRWYm"
   }, {
-    "id" : "RtA1r4vTvsoqHrLaGZK3s",
-    "source" : "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5",
-    "sourcePort" : "qviaDTs-5iCqfiGZopf-p$$zklgh-5s_omvS06hDGB9J",
-    "target" : "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA",
-    "targetPort" : "SS4YeFJ-UYz-W5_ji_O_L$$gYOe9ptiAMOzkpIn-ejRV"
-  }, {
     "id" : "zB1LoY5S2Qt5dF8rMD3-M",
     "source" : "8T5rDEgGsyVmI9WPbQM7y$$9Xwym8XoDv3xVomNVjpkM",
     "sourcePort" : "-MI6avNXNWLKgiO_9CkJS$$mbqBhsGlgpZAb0rFK3tfk",
@@ -90,6 +84,12 @@
     "sourcePort" : "V3mZhRWwMBNDrqEvQyHSi$$NqqXIcttpcrUhGr9ytWzt",
     "target" : "0FNx8lliiaB3vDvlX5Owb$$b3rW0TvtGqV0yC-Cs7_zA",
     "targetPort" : "eiR3MvyKSzKiZbH_YyHsk$$7ID2ovwLy1MWi-Zmuk7yK"
+  }, {
+    "id" : "grttBrE9yPOS4lG3Z2GLf$$8rAC_W72UFffAs94eKfNr",
+    "source" : "ZbrhiVQGBTV1S0wSfrrd-$$if0DgxfFLO4WO8sx1qXQr",
+    "sourcePort" : "BI3ivIcTQoCGnc6zW9MxZ$$K6HTK1G4BditTHvXxeNOZ",
+    "target" : "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA",
+    "targetPort" : "SS4YeFJ-UYz-W5_ji_O_L$$gYOe9ptiAMOzkpIn-ejRV"
   } ],
   "processes" : {
     "nEbNW_lLgkYCVc8hqfdwN$$25hjza2ov7UcKRCz1MloA" : {
@@ -164,12 +164,12 @@
         "columnsSelector" : [ "SS4YeFJ-UYz-W5_ji_O_L$$gYOe9ptiAMOzkpIn-ejRV##content" ]
       }
     },
-    "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5" : {
-      "id" : "Mtip3jhyXDNbqxet97Llq$$7H-OL23RMVCDiGDRfdEO5",
+    "ZbrhiVQGBTV1S0wSfrrd-$$if0DgxfFLO4WO8sx1qXQr" : {
+      "id" : "ZbrhiVQGBTV1S0wSfrrd-$$if0DgxfFLO4WO8sx1qXQr",
       "component" : "Source",
       "metadata" : {
-        "label" : "index_web_read",
-        "slug" : "index_web_read",
+        "label" : "web_bronze_url_alt",
+        "slug" : "web_bronze_url_alt",
         "x" : 0,
         "y" : 80,
         "phase" : 0,
@@ -180,14 +180,14 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "qviaDTs-5iCqfiGZopf-p$$zklgh-5s_omvS06hDGB9J",
+          "id" : "BI3ivIcTQoCGnc6zW9MxZ$$K6HTK1G4BditTHvXxeNOZ",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "datasetId" : "datasets/web_bronze_url"
+        "datasetId" : "datasets/web_bronze_url_alt"
       }
     },
     "3u5ae5Hd2G3jtDNo3ixul$$Tbv3XnEyY9dIrxwVw1avt" : {

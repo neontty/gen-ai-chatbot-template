@@ -10,5 +10,5 @@ from chatbot_live.udfs.UDFs import *
 def bot_messages_target(spark: SparkSession, in0: DataFrame):
     from pyspark.dbutils import DBUtils
     from spark_ai.webapps.slack import SlackUtilities
-    SlackUtilities(token = DBUtils(spark).secrets.get(scope = "slack", key = "token"), spark = spark)\
+    SlackUtilities(token = DBUtils(spark).secrets.get(scope = "rj-slack", key = "token"), spark = spark)\
         .write_messages(in0)

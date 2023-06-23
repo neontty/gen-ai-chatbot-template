@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "1691",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -413,7 +413,7 @@
         "qa_query_column_name" : null,
         "credential_type" : "databricks",
         "order_by_column" : "id",
-        "credential_db_scope" : "open_ai",
+        "credential_db_scope" : "rj-openai",
         "credential_manual_token" : "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",
         "operation" : "embed_texts",
         "embed_text_column_name" : "content_chunk",

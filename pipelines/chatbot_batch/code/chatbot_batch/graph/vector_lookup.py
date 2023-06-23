@@ -11,7 +11,7 @@ def vector_lookup(spark: SparkSession, in0: DataFrame) -> DataFrame:
     from pyspark.sql.functions import expr, array, struct
     from spark_ai.dbs.pinecone import PineconeDB, IdVector
     from pyspark.dbutils import DBUtils
-    PineconeDB(DBUtils(spark).secrets.get(scope = "pinecone", key = "token"), "us-east-1-aws").register_udfs(spark)
+    PineconeDB(DBUtils(spark).secrets.get(scope = "rj_pinecone", key = "token"), "us-east-1-aws").register_udfs(spark)
 
     return in0\
         .withColumn("_vector", col("openai_embedding"))\

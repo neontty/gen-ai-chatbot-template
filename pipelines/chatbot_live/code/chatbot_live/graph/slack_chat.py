@@ -12,5 +12,5 @@ def slack_chat(spark: SparkSession) -> DataFrame:
 
     return spark.readStream\
         .format("io.prophecy.spark_ai.webapps.slack.SlackSourceProvider")\
-        .option("token", DBUtils(spark).secrets.get(scope = "slack", key = "app_token"))\
+        .option("token", DBUtils(spark).secrets.get(scope = "rj-slack", key = "app_token"))\
         .load()

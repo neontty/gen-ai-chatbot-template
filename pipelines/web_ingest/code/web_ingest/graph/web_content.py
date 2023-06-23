@@ -13,4 +13,4 @@ def web_content(spark: SparkSession, scrape_pages: DataFrame):
         .option("mergeSchema", True)\
         .option("overwriteSchema", True)\
         .mode("overwrite")\
-        .saveAsTable(f"prophecy_data.web_bronze.content")
+        .saveAsTable(f"rj_web_bronze.content")

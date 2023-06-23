@@ -2,7 +2,7 @@
   "metainfo" : {
     "id" : "1",
     "language" : "python",
-    "fabricId" : "1777",
+    "fabricId" : "1174",
     "frontEndLanguage" : "sql",
     "mode" : "stream",
     "udfs" : {
@@ -376,7 +376,7 @@
         "qa_query_column_name" : "input",
         "credential_type" : "databricks",
         "order_by_column" : null,
-        "credential_db_scope" : "open_ai",
+        "credential_db_scope" : "rj-openai",
         "credential_manual_token" : "",
         "operation" : "answer_question",
         "embed_text_column_name" : null,
@@ -508,10 +508,10 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed.payload.event.user", "pY_SW15p-BRn64MvRkJ0x$$CaxhduG_vmyAS8h6Rwz7Y##value_parsed" ],
+        "columnsSelector" : [ "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload.event.user", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload", "Kzg8vCV1NW5VZdx3CF8Ou$$P9_92B44k71HE7AY1AjR5##value_parsed.payload.event" ],
         "condition" : {
           "format" : "sql",
-          "expression" : "value_parsed is not null and value_parsed.payload.event.user != 'U05AU1K4ELV'"
+          "expression" : "value_parsed is not null and value_parsed.payload.event.user != 'U05ED3HF78R'"
         }
       }
     },
@@ -1261,7 +1261,7 @@
         "qa_query_column_name" : null,
         "credential_type" : "databricks",
         "order_by_column" : "value_parsed.ts",
-        "credential_db_scope" : "open_ai",
+        "credential_db_scope" : "rj-openai",
         "credential_manual_token" : "",
         "operation" : "embed_texts",
         "embed_text_column_name" : "text",
@@ -1762,11 +1762,11 @@
         "isCustomOutputSchema" : true
       },
       "properties" : {
-        "index_name" : "all-vectors",
+        "index_name" : "rj-index",
         "credential_type" : "databricks",
-        "credential_db_scope" : "pinecone",
+        "credential_db_scope" : "rj-pinecone",
         "environment" : "us-east-1-aws",
-        "credential_db_key" : "token",
+        "credential_db_key" : "api_key",
         "vector_column_name" : "openai_embedding",
         "top_k" : 3,
         "credential_manual_api_key" : ""
