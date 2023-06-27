@@ -8,4 +8,4 @@ from chatbot_live.config.ConfigStore import *
 from chatbot_live.udfs.UDFs import *
 
 def content_vectors(spark: SparkSession) -> DataFrame:
-    return spark.read.table(f"rj_web_silver.content_vectorized")
+    return spark.read.table(f"rj.web_silver.content_vectorized")
